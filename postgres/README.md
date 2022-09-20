@@ -17,27 +17,39 @@ listen_address = '*'
 listen_address = '192.168.1.10'
 ```
 
-### Switch to posgres (Linux) user
-```sudo su - postgres```
+### Switch to posgres (Linux) user and run psql
+```
+sudo su - postgres
+psql
+
+# or oneline
+sudo -u postgres psql
+
+```
 
 ### Set (DB) admin user (as postgres Linux user)
 ```
-psql -c "alter user postgres with password 'postgres_password'"
+alter user postgres with password 'postgres_password';
 ```
 
 ### Create user for new database
 ```
-createuser dbuser
+createuser dbuser;
 ```
 
-### Create new database and give control to dbuser (from psql client)
+### Create new database 
 ```
-createdb db -O dbuser
+createdb db;
 ```
 
 ### Set password for dbuser (from psql client)
 ```
 alter user dbuser with password 'dbuser_password';
+```
+
+### Grant all privileges on database to specific user
+```
+grant all privileges on database db to dbuser;
 ```
 
 ### List database (from shell)
