@@ -3,6 +3,14 @@
 ### Styled-componets
 ```
 pnpm install --save-dev styled-components
+
+// update.next.config.js
+module.exports = {
+  compiler: {
+    // see https://styled-components.com/docs/tooling#babel-plugin for more info on the options.
+    styledComponents: true
+  }
+}
 ```
 
 ```jsx
