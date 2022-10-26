@@ -1,4 +1,34 @@
-# Data fetching in NMEt.js
+# Data fetching in Next.js
+
+### Data fetching Next.js 13+ (app dir)
+``` js
+// app/page.js
+import { use } from 'react';
+
+async function getData() {
+  // get data each request
+  const res = await fetch(URL);
+
+  // get data SSG (getStaticProps)
+  const res = await fetch(URL, {cache: 'force-cache'})
+
+  // get data SSR (getServerSideProps)
+  const name = await fetch(URL, {cache: 'no-store'})
+
+  // get data SSG with revalidate after 10[s]
+  const name = await fetch(URL, {cache: revalidate: 10});
+
+  const name = await res.json();
+  return name;
+}
+
+export default function Page() {
+    const name = use(getData());
+    return <div>{name}</div>
+}
+```
+
+### Data fetching up to Next.js 12
 
 ### SSR: server-sider rendering
 * runs on server only
