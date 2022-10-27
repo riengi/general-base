@@ -1,5 +1,11 @@
 # React (16.8+)
 
+### Create react project frameworks
+* Create React App (CRA)
+* Vite 
+* Next.js
+
+
 ### React component
 ```jsx
 // Component.jsx
