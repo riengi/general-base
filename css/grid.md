@@ -1,4 +1,5 @@
 # CSS Grid Layout
+* [W3 Schools](https://www.w3schools.com/css/css_grid.asp)
 
 ## Elements
 * columns
@@ -153,4 +154,16 @@ Rectangle like definition (row, column) .. (row, column)
     }
 }
 ```
+## Ordering/positioning the Items 
+We can reshufle the items (r_start, c_start, r_end_ c_end)
+```css
+.item1 { grid-area: 1 / 3 / 2 / 4}
+.item2 { grid-area: 1 / 1 / 2 /2 }
+```
 
+### Rearanging order for certain screen size
+```css
+@media only scree n(max-width: 500) {
+    .item1 { grid-area: 1 / span 3 / 2 / 4;}
+    .item2 { grid-area: 2 / 3 / 3 4; }
+}
