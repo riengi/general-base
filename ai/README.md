@@ -1,4 +1,10 @@
 # AI
+* [cpu](cpu.md)
+* [cuda](cuda.md)
+* [formats](formats.md)
+* [models](models.md)
+* [projects](projects.md)
+
 
 ## AI types
 * Linear Regression 
