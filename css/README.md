@@ -1,5 +1,12 @@
 # CSS Styles
-Useful styles
+
+## Content
+* [effects](effects.md)
+* [flex](flex.md)
+* [grid](grid.md)
+* [semantic](semantic.md)
+
+## Useful styles
 
 
 ### Button styling with fading hover effect using transition-duration
