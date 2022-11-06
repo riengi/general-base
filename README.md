@@ -12,4 +12,5 @@ Knowledge base containing useful stuff for programming that has not its own spec
 * [python](python/README.md)
 * [react](react/README.md)
 * [ssh](ssh/README.md)
+* [ts](ts/README.md)
  
