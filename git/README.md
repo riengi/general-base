@@ -1,5 +1,9 @@
 # Git Knowledge Base
 
+## Content
+* [fixing-git-history](fixing-git-history.md)
+
+
 ### List git configuration (including username and email)
 ```git config --list```
 
