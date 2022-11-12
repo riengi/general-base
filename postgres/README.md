@@ -1,5 +1,8 @@
 # Posgres 
 
+* [datatypes](datatypes.md)
+* [tables](tables.md)
+
 ### Install (Ubuntu 22.04)
 ```sudo apt install postgresql postgresql-client```
 
