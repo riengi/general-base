@@ -1,5 +1,9 @@
 # React (16.8+)
 
+* [easy-peasy](easy-peasy.md)
+* [tips](tips.md)
+* [vite](vite.md)
+
 ### Create react project frameworks
 * Create React App (CRA)
 * Vite 
